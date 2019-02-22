@@ -1,0 +1,45 @@
+.njyf-nav {
+  height: 100px;
+  background: #fff;
+  padding: 18px 0 21px 0;
+  position: relative;
+  .nav-content {
+    display: flex;
+    position: relative;
+    line-height: 30px;
+    .njyf-name {
+      font-size: 30px;
+      color: #0690D2;
+      margin-left: 15%;
+    }
+    .area {
+      margin-left: 20px;
+      height: 20px;
+      margin-top: 5px;
+      line-height: 20px;
+      padding: 0 3px;
+      border-radius:3px;
+      border:1px solid rgba(151,151,151,1)
+    }
+    .njyf-nav-list {
+      margin-left: 12%;
+      li {
+        display: inline-block;
+        cursor: pointer;
+      }
+      li:not(:first-child) {
+        margin-left: 30px;
+      }
+      .isactive {
+        color: #0690D2;
+      }
+    }
+    .tel-content {
+      position: absolute;
+      right: 10px;
+      .kf-tel {
+        color: #0690D2;
+      }
+    }
+  }
+}

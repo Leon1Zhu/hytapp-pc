@@ -1,3 +1,17 @@
-<p>
-  nav-component works!
-</p>
+<section class="njyf-nav">
+  <div class="nav-content">
+    <div class="njyf-name">
+      云峰房产
+    </div>
+    <div class="area">
+      南京
+    </div>
+    <ul class="njyf-nav-list">
+      <li *ngFor="let item of navList" (click)="goNav(item)" [class.isactive]="item.isActive">{{item.name}}</li>
+    </ul>
+    <div class="tel-content">
+      <i class="iconfont icon-icon_Phone" style="color: #0a86cd"></i>
+      <span class="kf-tel">客服电话:025-58917591</span>
+    </div>
+  </div>
+</section>
