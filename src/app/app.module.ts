@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { NavComponentComponent } from './nav-component/nav-component.component';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import {AboutUsModule} from './about-us/about-us.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import {HttpClientModule} from '@angular/common/http';
   imports: [
     BrowserModule,
     HttpClientModule,
+    AboutUsModule,
     AppRoutingModule,
   ],
   providers: [],
