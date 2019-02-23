@@ -10,6 +10,8 @@ import { ThridNavComponent } from './thrid-nav/thrid-nav.component';
 import { NgZorroAntdModule} from 'ng-zorro-antd';
 import {FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { FourNavComponent } from './four-nav/four-nav.component';
+import { FiveNavComponent } from './five-nav/five-nav.component';
 
 @NgModule({
   imports: [
@@ -19,6 +21,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     AboutUsRoutingModule
   ],
-  declarations: [AboutContentComponent, FirstNavComponent, SecondNavComponent, SecondNavItemComponent, ThridNavComponent]
+  declarations: [AboutContentComponent, FirstNavComponent, SecondNavComponent, SecondNavItemComponent, ThridNavComponent, FourNavComponent, FiveNavComponent]
 })
 export class AboutUsModule { }

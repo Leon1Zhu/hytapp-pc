@@ -7,11 +7,13 @@ import { NavComponentComponent } from './nav-component/nav-component.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgZorroAntdModule} from 'ng-zorro-antd';
 import {AboutUsModule} from './about-us/about-us.module';
+import { FootComComponent } from './foot-com/foot-com.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponentComponent
+    NavComponentComponent,
+    FootComComponent
   ],
   imports: [
     BrowserModule,

@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // todo设置host，参照main，设置请求拦截，替换请求域名
+  host: ''
 };
 
 /*
