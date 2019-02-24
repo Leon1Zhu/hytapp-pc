@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {NzNotificationComponent, NzNotificationService} from 'ng-zorro-antd';
-import {AboutServiceService} from '../../service/about-service.service';
 import {AboutServicePhoneService} from '../about-service-phone.service';
 
 @Component({
@@ -18,7 +16,7 @@ export class FourNavComponent implements OnInit {
   }
 
   addSubPc() {
-    this.aboutService.addSubPc(this.phoneNumber);
+    this.aboutService.addSubPc(this.phoneNumber, '帮我找房');
   }
 
 }

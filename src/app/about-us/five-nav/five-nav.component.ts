@@ -15,6 +15,6 @@ export class FiveNavComponent implements OnInit {
   }
 
   addSubPc() {
-    this.aboutService.addSubPc(this.phoneNumber);
+    this.aboutService.addSubPc(this.phoneNumber, '预约专车');
   }
 }

@@ -21,6 +21,14 @@ import { FiveNavComponent } from './five-nav/five-nav.component';
     BrowserAnimationsModule,
     AboutUsRoutingModule
   ],
-  declarations: [AboutContentComponent, FirstNavComponent, SecondNavComponent, SecondNavItemComponent, ThridNavComponent, FourNavComponent, FiveNavComponent]
+  declarations: [
+    AboutContentComponent,
+    FirstNavComponent,
+    SecondNavComponent,
+    SecondNavItemComponent,
+    ThridNavComponent,
+    FourNavComponent,
+    FiveNavComponent
+  ]
 })
 export class AboutUsModule { }
