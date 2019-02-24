@@ -4,8 +4,7 @@
 
 export const environment = {
   production: false,
-  // todo设置host，参照main，设置请求拦截，替换请求域名
-  host: ''
+  host: 'http://localhost:8888',
 };
 
 /*

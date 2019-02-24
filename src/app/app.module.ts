@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgZorroAntdModule} from 'ng-zorro-antd';
 import {AboutUsModule} from './about-us/about-us.module';
 import { FootComComponent } from './foot-com/foot-com.component';
+import {httpInterceptorProviders} from './http-interceptors';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FootComComponent } from './foot-com/foot-com.component';
     NgZorroAntdModule,
     AppRoutingModule,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [httpInterceptorProviders],
 })
 export class AppModule { }
