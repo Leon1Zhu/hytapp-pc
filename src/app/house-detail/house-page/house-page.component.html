@@ -1,3 +1,18 @@
-<p>
-  house-page works!
-</p>
+<section class="house-detail-info">
+  <div class="house-detail-title">
+    <div class="house-name">{{houseInfo?.houseName}}</div>
+    <nz-tag nzMode="checkable" class="house-statu" [nzChecked]="true">{{houseInfo.salesStatus}}</nz-tag>
+    <div class="house-tel">
+      <nz-radio-group [(ngModel)]="size">
+        <label class="watch-house-btn" nz-radio-button nzValue="large" >预约看房</label>
+      </nz-radio-group>
+      <div class="tel-content">
+        <i class="iconfont icon-icon_Phone" style="color: #0a86cd;margin-right: 5px;"></i>
+        <span class="kf-tel">{{houseInfo.houseTel}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="house-detail-content">
+
+  </div>
+</section>

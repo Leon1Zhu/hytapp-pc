@@ -1,21 +1,33 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
+import {HouseManageServiceService} from '../../service/house-manage-service.service';
 
 @Component({
   selector: 'app-house-page',
   templateUrl: './house-page.component.html',
-  styleUrls: ['./house-page.component.css']
+  styleUrls: ['./house-page.component.less']
 })
 export class HousePageComponent implements OnInit {
+  private houseId: string;
+  size = 'large';
+  houseInfo: object = {};
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router
+    private houseManageService: HouseManageServiceService
   ) { }
 
   ngOnInit() {
-    console.log(this.route)
-    console.log(this.router)
+    this.route.params.subscribe((data) => {
+      this.houseId = data.id;
+      this.initHouseInfo();
+    });
+  }
+
+  initHouseInfo() {
+    this.houseManageService.getHouseById(this.houseId).subscribe((response) => {
+      this.houseInfo = response;
+    });
   }
 
 }
