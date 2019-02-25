@@ -31,6 +31,10 @@ export class HousePageComponent implements OnInit {
     });
   }
 
+  showModel() {
+    this.isVisible = true;
+  }
+
   // 模态框确定事件
   handleOk() {
 
@@ -38,7 +42,7 @@ export class HousePageComponent implements OnInit {
 
   // 模态框取消事件
   handleCancel() {
-
+    this.isVisible = false;
   }
 
 }

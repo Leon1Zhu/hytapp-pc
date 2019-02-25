@@ -9,6 +9,7 @@ import { HouseImgsComponent } from './house-imgs/house-imgs.component';
 import { HouseRightInfoComponent } from './house-right-info/house-right-info.component';
 import { HouseTitleComponent } from './house-title/house-title.component';
 import { RedpackageTagComponent } from './house-right-info/redpackage-tag/redpackage-tag.component';
+import { FreeCarComponent } from './house-right-info/free-car/free-car.component';
 
 @NgModule({
   imports: [
@@ -17,6 +18,6 @@ import { RedpackageTagComponent } from './house-right-info/redpackage-tag/redpac
     FormsModule,
     HouseDetailRoutingModule
   ],
-  declarations: [HousePageComponent, HouseImgsComponent, HouseRightInfoComponent, HouseTitleComponent, RedpackageTagComponent]
+  declarations: [HousePageComponent, HouseImgsComponent, HouseRightInfoComponent, HouseTitleComponent, RedpackageTagComponent, FreeCarComponent]
 })
 export class HouseDetailModule { }
