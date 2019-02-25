@@ -20,11 +20,13 @@
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
+    "@types/swiper": "^4.4.2",
     "aes-js": "^3.1.2",
     "core-js": "^2.5.4",
     "less": "^2.7.3",
     "ng-zorro-antd": "^7.0.0-rc.3",
     "rxjs": "6.0.0",
+    "swiper": "^4.4.6",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

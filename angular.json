@@ -32,9 +32,12 @@
               "src/styles.less",
               "src/aliIcon.css",
               "src/theme.less",
-              "src/reset.css"
+              "src/reset.css",
+              "./node_modules/swiper/dist/css/swiper.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/swiper/dist/js/swiper.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -85,7 +88,9 @@
               "src/styles.less",
               "src/aliIcon.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "./node_modules/swiper/dist/js/swiper.min.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
