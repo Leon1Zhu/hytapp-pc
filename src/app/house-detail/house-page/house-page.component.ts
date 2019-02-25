@@ -9,6 +9,7 @@ import {HouseManageServiceService} from '../../service/house-manage-service.serv
 })
 export class HousePageComponent implements OnInit {
   private houseId: string;
+  isVisible = false;
   size = 'large';
   houseInfo: object = {};
 
@@ -28,6 +29,16 @@ export class HousePageComponent implements OnInit {
     this.houseManageService.getHouseById(this.houseId).subscribe((response) => {
       this.houseInfo = response;
     });
+  }
+
+  // 模态框确定事件
+  handleOk() {
+
+  }
+
+  // 模态框取消事件
+  handleCancel() {
+
   }
 
 }

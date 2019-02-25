@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import aes from '../util/aes';
 
 @Injectable({
   providedIn: 'root'
@@ -13,8 +14,9 @@ export class AboutServiceService {
    * 新增订阅
    */
   public addNewSubPc(phone, type) {
+
     const params = {
-      phone,
+      phone: aes.encryption(phone),
       type,
       origin: 'PC',
     }

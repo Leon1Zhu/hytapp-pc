@@ -1,3 +1,11 @@
 <div class="detail-right-info">
-  <div class="avage-privce">均价{{houseInfo.price?.replace('元/㎡', '')}}元/㎡</div>
+  <div class="avage-privce">均价<span>{{houseInfo.price?.replace('元/㎡', '')}}</span>元/㎡</div>
+  <ul class="detail-info-list">
+    <li class="detail-info-li">物业用途<span class="detail-info-li-child">{{houseInfo.buildingType}}</span></li>
+    <li class="detail-info-li">产权年限<span class="detail-info-li-child">暂无该数据</span></li>
+    <li class="detail-info-li">装修状况<span class="detail-info-li-child">{{houseInfo.renovation}}</span></li>
+    <li class="detail-info-li">开盘时间<span class="detail-info-li-child">{{houseInfo.openTime}}</span></li>
+    <li class="detail-info-li">销售状态<span class="detail-info-li-child">{{houseInfo.salesStatus}}</span></li>
+    <li class="detail-info-li">楼盘地址<span class="detail-info-li-child">{{houseInfo.address}}</span></li>
+  </ul>
 </div>
