@@ -10,6 +10,10 @@ import { HouseRightInfoComponent } from './house-right-info/house-right-info.com
 import { HouseTitleComponent } from './house-title/house-title.component';
 import { RedpackageTagComponent } from './house-right-info/redpackage-tag/redpackage-tag.component';
 import { FreeCarComponent } from './house-right-info/free-car/free-car.component';
+import { HouseDetailNavComponent } from './house-detail-nav/house-detail-nav.component';
+import { HouseTitleItemComponent } from './house-title-item/house-title-item.component';
+import { HouseTypeComComponent } from './house-type-com/house-type-com.component';
+import { HouseBaseInfoComponent } from './house-base-info/house-base-info.component';
 
 @NgModule({
   imports: [
@@ -18,6 +22,6 @@ import { FreeCarComponent } from './house-right-info/free-car/free-car.component
     FormsModule,
     HouseDetailRoutingModule
   ],
-  declarations: [HousePageComponent, HouseImgsComponent, HouseRightInfoComponent, HouseTitleComponent, RedpackageTagComponent, FreeCarComponent]
+  declarations: [HousePageComponent, HouseImgsComponent, HouseRightInfoComponent, HouseTitleComponent, RedpackageTagComponent, FreeCarComponent, HouseDetailNavComponent, HouseTitleItemComponent, HouseTypeComComponent, HouseBaseInfoComponent]
 })
 export class HouseDetailModule { }

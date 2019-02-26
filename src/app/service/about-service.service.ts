@@ -34,7 +34,7 @@ export class AboutServiceService {
     const params = {
       phone: aes.encryption(phone),
       name,
-      proId
+      proId,
       type,
       origin: 'PC',
     }

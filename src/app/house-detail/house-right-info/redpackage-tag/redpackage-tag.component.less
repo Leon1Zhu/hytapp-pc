@@ -1,0 +1,31 @@
+.red-package-tag {
+  background: #FFDBD7;
+  padding: 10px 20px;
+  display: inline-block;
+  position: relative;
+  margin-top: 30px;
+  &:before, &:after {
+    content: ' ';
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 100%;
+    position: absolute;
+  }
+  &:before {
+    top: 13px;
+    left: -10px;
+  }
+  &:after {
+    top: 13px;
+    right: -10px;
+  }
+  .redpackage-name {
+    margin: 0 30px 0 5px;
+    color: #825C59;
+  }
+
+  ::ng-deep .ant-tag-has-color.ant-tag-checkable-checked {
+    font-size: 14px;
+  }
+}

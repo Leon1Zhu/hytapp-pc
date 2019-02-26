@@ -1,0 +1,22 @@
+<div class="house-type-content">
+  <div class="house-type-img">
+    <img [src]="globalInfo.imgsUrl + typeInfo.typeImg">
+  </div>
+  <div class="house-type-info-content">
+    <div class="name-content">
+      <span class="type-name">{{typeInfo.typeName}}</span>
+      <span class="type-sale-statu">在售</span>
+    </div>
+    <span class="type-area-info">
+      建面&nbsp;{{typeInfo.typeMeasure}}&nbsp;&nbsp;朝向暂无数据
+    </span>
+    <span class="type-price">{{typeInfo.typePrice}}</span>
+    <ul class="type-advatage-content">
+      <li class="type-advatage-item" *ngFor="let item of typeInfo.typeLabel.split(',')">{{item}}</li>
+    </ul>
+  </div>
+  <div class="type-detail-button-content">
+    <button class="type-detail-button" nz-button nzType="primary" >查看</button>
+  </div>
+
+</div>

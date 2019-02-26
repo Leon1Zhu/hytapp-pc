@@ -1,0 +1,58 @@
+.house-type-content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  .house-type-img {
+    width: 30%;
+    img {
+      width: 100%;
+    }
+  }
+  .house-type-info-content {
+    .name-content {
+      .type-name {
+        font-family: MicrosoftYaHei-Bold;
+        color: #000000;
+        font-size: 18px;
+      }
+      .type-sale-statu {
+        font-size: 12px;
+        color: #0284DC;
+        padding: 5px;
+        background: #dceefa;
+        margin-left: 20px;
+        border-radius: 2px;
+      }
+    }
+    .type-area-info {
+      display: block;
+      margin-top: 20px;
+    }
+    .type-price {
+      margin-top: 20px;
+      display: block;
+      font-family: Arial-Black;
+      color: #FF0000;
+    }
+    .type-advatage-content {
+      margin-top: 20px;
+      display: flex;
+      .type-advatage-item {
+        color: white;
+        background: #48BDA9;
+        padding: 5px;
+        font-size: 14px;
+        font-family: initial;
+      }
+      .type-advatage-item:not(:first-child) {
+        margin-left: 15px;
+      }
+    }
+  }
+  .type-detail-button-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
