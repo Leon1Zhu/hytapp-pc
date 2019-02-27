@@ -8,6 +8,6 @@
     <li class="detail-info-li">销售状态<span class="detail-info-li-child">{{houseInfo.salesStatus}}</span></li>
     <li class="detail-info-li">楼盘地址<span class="detail-info-li-child">{{houseInfo.address}}</span></li>
   </ul>
-  <app-redpackage-tag (addSb)="addSubPc()" ></app-redpackage-tag>
-  <app-free-car [houseInfo]="houseInfo" (addSb)="addSubPc()"></app-free-car>
+  <app-redpackage-tag (addSb)="addSubPc($event)" ></app-redpackage-tag>
+  <app-free-car [houseInfo]="houseInfo" (addSb)="addSubPc($event)"></app-free-car>
 </div>

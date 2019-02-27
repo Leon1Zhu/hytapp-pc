@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HouseDetailRoutingModule } from './house-detail-routing.module';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
 import { HousePageComponent } from './house-page/house-page.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HouseImgsComponent } from './house-imgs/house-imgs.component';
 import { HouseRightInfoComponent } from './house-right-info/house-right-info.component';
 import { HouseTitleComponent } from './house-title/house-title.component';
@@ -23,6 +23,7 @@ import {HouseShowSwiperModule} from '../house-show-swiper/house-show-swiper.modu
     CommonModule,
     NgZorroAntdModule,
     FormsModule,
+    ReactiveFormsModule,
     HouseShowSwiperModule,
     HouseDetailRoutingModule
   ],

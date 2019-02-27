@@ -13,7 +13,7 @@ import globalData from '../../util/global';
   templateUrl: './house-imgs.component.html',
   styleUrls: ['./house-imgs.component.less']
 })
-export class HouseImgsComponent implements OnInit, AfterViewInit, AfterViewInit, AfterViewChecked{
+export class HouseImgsComponent implements OnInit, AfterViewInit, AfterViewInit, AfterViewChecked {
 
   @Input() houseInfo: any;
   galleryThumbs: any;

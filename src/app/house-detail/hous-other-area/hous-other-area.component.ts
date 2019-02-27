@@ -7,11 +7,11 @@ import {AfterViewInit, Component, Input, OnInit} from '@angular/core';
 })
 export class HousOtherAreaComponent implements OnInit, AfterViewInit {
   @Input() houseInfo: any;
-  mapSearchList: Array;
+  mapSearchList: Array<any>;
   map: any;
   mapPoint: any;
   showMore: false;
-  searchResult: Array;
+  searchResult: Array<any>;
   math = Math;
   constructor() {
     this.mapSearchList = [
@@ -48,7 +48,7 @@ export class HousOtherAreaComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     setTimeout(() => {
       this.initMap();
-    }, 500)
+    }, 500);
 
   }
 
@@ -65,12 +65,12 @@ export class HousOtherAreaComponent implements OnInit, AfterViewInit {
         this.searchInfoInMap(that.mapSearchList[0].searchInfo);
       }
     }, '南京');
-  },
+  }
 
   selectMapItem(item) {
     this.mapSearchList.forEach((listItem) => {
       listItem.active = false;
-    })
+    });
     item.active = true;
     this.searchInfoInMap(item.searchInfo);
   }
@@ -89,7 +89,7 @@ export class HousOtherAreaComponent implements OnInit, AfterViewInit {
     } else {
       this.searchResult = result.Ar;
     }
-  },
+  }
 
   searchInfoInMap(item) {
     this.map.clearOverlays();
@@ -104,6 +104,6 @@ export class HousOtherAreaComponent implements OnInit, AfterViewInit {
       }});
     local.searchNearby(item, this.mapPoint, 1500);
 
-  },
+  }
 
 }

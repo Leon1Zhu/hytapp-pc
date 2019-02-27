@@ -10,6 +10,7 @@ import { AboutUsModule } from './about-us/about-us.module';
 import { FootComComponent } from './foot-com/foot-com.component';
 import {httpInterceptorProviders} from './http-interceptors';
 import {HouseDetailModule} from './house-detail/house-detail.module';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,8 @@ import {HouseDetailModule} from './house-detail/house-detail.module';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     AboutUsModule,
     NgZorroAntdModule,

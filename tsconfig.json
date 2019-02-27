@@ -16,5 +16,9 @@
       "es2017",
       "dom"
     ]
-  }
+  },
+  "exclude": [
+    "src/app/house-detail/house-other-area/*",
+    "src/app/house-detail/house-imgs/*"
+  ]
 }

@@ -1,0 +1,17 @@
+<div class="swiper-content-item" (click)="goDetail()"  >
+  <div class="img-content">
+    <img [src]="imgUrl + houseInfo.coverPhoto">
+  </div>
+  <div class="house-info-content">
+    <div class="detail-top-content">
+      <span class="house-name">{{houseInfo.houseName}}</span>
+      <span class="house-price">{{houseInfo.price}}</span>
+    </div>
+    <div class="detail-bottom-content">
+      <span class="house-area">{{houseInfo.regin}}</span>
+      <ul class="house-advantage-list">
+        <li *ngFor="let item of houseInfo?.houseType.split(',')">{{item}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

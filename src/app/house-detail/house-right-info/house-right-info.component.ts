@@ -9,15 +9,15 @@ import * as moment from 'moment';
 export class HouseRightInfoComponent implements OnInit {
 
   @Input() houseInfo: any;
-  @Output() addSb = new EventEmitter<void>();
+  @Output() addSb = new EventEmitter<string>();
   moment = moment;
   constructor() { }
 
   ngOnInit() {
   }
 
-  addSubPc () {
-    this.addSb.emit();
+  addSubPc (value: string) {
+    this.addSb.emit(value);
   }
 
 }

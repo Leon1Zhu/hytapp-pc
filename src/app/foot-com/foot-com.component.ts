@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-foot-com',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FootComComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router
+  ) { }
 
   ngOnInit() {
+  }
+
+  goAboutUs() {
+    this.router.navigate(['about']);
   }
 
 }

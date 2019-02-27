@@ -7,7 +7,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 })
 export class RedpackageTagComponent implements OnInit {
   @Input() houseInfo: any;
-  @Output() addSb = new EventEmitter<void>();
+  @Output() addSb = new EventEmitter<string>();
 
   constructor() {
   }
@@ -16,7 +16,7 @@ export class RedpackageTagComponent implements OnInit {
   }
 
   addSubPc() {
-    this.addSb.emit();
+    this.addSb.emit('红包领取');
   }
 }
 

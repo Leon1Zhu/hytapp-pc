@@ -16,7 +16,7 @@
     <app-house-title [houseInfo]="houseInfo"></app-house-title>
     <div class="detail-title">
       <app-house-imgs [houseInfo]="houseInfo"></app-house-imgs>
-      <app-house-right-info (addSb)="showModel()" [houseInfo]="houseInfo"></app-house-right-info>
+      <app-house-right-info (addSb)="showModel($event)" [houseInfo]="houseInfo"></app-house-right-info>
     </div>
 
     <app-house-detail-nav></app-house-detail-nav>
@@ -35,15 +35,36 @@
 
     <app-house-title-item [titleId]="'guess-your-like'" [titleName]="'猜你喜欢'"></app-house-title-item>
 
-    <app-swiper-content [houseList]="houseList"></app-swiper-content>
+    <app-swiper-content [houseList]="houseList" [swiperClass]="'detail-house-like-content'"></app-swiper-content>
+    <span class="mz">
+      免责声明:&nbsp;本网站楼盘信息目的在于为用户提供参考信息，实际以政府部门等级为准，请谨慎核查。
+    </span>
   </div>
 
 
 
 
-  <nz-modal [(nzVisible)]="isVisible" nzWrapClassName="vertical-center-modal" nzTitle="The first Modal" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
-    <p>Content one</p>
-    <p>Content two</p>
-    <p>Content three</p>
+  <nz-modal [(nzVisible)]="isVisible" nzWrapClassName="vertical-center-modal" [nzTitle]="modelTitle" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+    <form nz-form [formGroup]="validateForm" class="login-form">
+      <nz-form-item>
+        <nz-form-control>
+          <nz-input-group [nzPrefix]="prefixUser">
+            <input type="text" nz-input formControlName="userName" placeholder="姓名">
+          </nz-input-group>
+          <nz-form-explain *ngIf="validateForm.get('userName').dirty && validateForm.get('userName').errors">姓名不能为空</nz-form-explain>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control>
+          <nz-input-group [nzPrefix]="prefixLock">
+            <input type="number" nz-input formControlName="phone" placeholder="手机号码">
+          </nz-input-group>
+          <nz-form-explain *ngIf="validateForm.get('phone').dirty && validateForm.get('phone').errors">请输入正确的11位手机号码</nz-form-explain>
+        </nz-form-control>
+      </nz-form-item>
+    </form>
   </nz-modal>
 </section>
+
+<ng-template #prefixUser><i class="iconfont icon-yonghu3"></i></ng-template>
+<ng-template #prefixLock><i class="iconfont icon-icon_Phone"></i></ng-template>
