@@ -1,0 +1,22 @@
+.house-base-info {
+  display: flex;
+  .left-content {
+    flex: 1;
+  }
+  .right-content {
+    flex: 1;
+  }
+  .base-info-item {
+    .item-left {
+      color: #9B9B9B;
+    }
+
+    .item-right {
+      margin-left: 20px;
+      color: #000000;
+    }
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+}

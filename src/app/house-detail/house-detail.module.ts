@@ -14,6 +14,8 @@ import { HouseDetailNavComponent } from './house-detail-nav/house-detail-nav.com
 import { HouseTitleItemComponent } from './house-title-item/house-title-item.component';
 import { HouseTypeComComponent } from './house-type-com/house-type-com.component';
 import { HouseBaseInfoComponent } from './house-base-info/house-base-info.component';
+import { HouseAdvantageInfoComponent } from './house-advantage-info/house-advantage-info.component';
+import { HousOtherAreaComponent } from './hous-other-area/hous-other-area.component';
 
 @NgModule({
   imports: [
@@ -22,6 +24,19 @@ import { HouseBaseInfoComponent } from './house-base-info/house-base-info.compon
     FormsModule,
     HouseDetailRoutingModule
   ],
-  declarations: [HousePageComponent, HouseImgsComponent, HouseRightInfoComponent, HouseTitleComponent, RedpackageTagComponent, FreeCarComponent, HouseDetailNavComponent, HouseTitleItemComponent, HouseTypeComComponent, HouseBaseInfoComponent]
+  declarations: [
+    HousePageComponent,
+    HouseImgsComponent,
+    HouseRightInfoComponent,
+    HouseTitleComponent,
+    RedpackageTagComponent,
+    FreeCarComponent,
+    HouseDetailNavComponent,
+    HouseTitleItemComponent,
+    HouseTypeComComponent,
+    HouseBaseInfoComponent,
+    HouseAdvantageInfoComponent,
+    HousOtherAreaComponent
+  ]
 })
 export class HouseDetailModule { }

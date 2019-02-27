@@ -1,0 +1,7 @@
+<div class="house-advantage-content">
+  <nz-tabset [nzTabPosition]="'top'" [nzType]="'card'">
+    <nz-tab *ngFor="let tab of houseInfo.advantage" [nzTitle]="tab.title">
+      {{tab.content}}
+    </nz-tab>
+  </nz-tabset>
+</div>

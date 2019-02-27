@@ -1,0 +1,18 @@
+<div class="housing-map-content">
+  <div id="allmap"></div>
+  <div class="map-right-content">
+    <ul class="pt-content">
+      <li class="pt-li" [ngClass]="{'active' : item.active}" *ngFor="let item of mapSearchList" (click)="selectMapItem(item)">
+        <span>{{item.name}}</span>
+      </li>
+    </ul>
+    <ul id="r-result">
+      <div>
+        <li class="result-li" *ngFor="let item of searchResult; let i = index">
+          <span class="a-content">A</span>{{item.title}}
+          <span class="result-ditance">距离{{math.floor(map.getDistance(mapPoint, item.point))}}米</span>
+        </li>
+      </div>
+    </ul>
+  </div>
+</div>

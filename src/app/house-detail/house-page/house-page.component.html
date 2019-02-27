@@ -25,6 +25,17 @@
       <app-house-type-com *ngFor="let item of houseInfo.type" [typeInfo]="item"></app-house-type-com>
     </div>
     <app-house-title-item [titleId]="'house-base-info'" [titleName]="'楼盘基础信息'"></app-house-title-item>
+    <app-house-base-info [houseInfo]="houseInfo"></app-house-base-info>
+
+    <app-house-title-item [titleId]="'house-advatage-info'" [titleName]="'楼盘优势'"></app-house-title-item>
+    <app-house-advantage-info [houseInfo]="houseInfo"></app-house-advantage-info>
+
+    <app-house-title-item [titleId]="'area-other-info'" [titleName]="'周边配套'"></app-house-title-item>
+    <app-hous-other-area [houseInfo]="houseInfo"></app-hous-other-area>
+
+    <app-house-title-item [titleId]="'guess-your-like'" [titleName]="'猜你喜欢'"></app-house-title-item>
+
+    <div></div>
   </div>
 
 
