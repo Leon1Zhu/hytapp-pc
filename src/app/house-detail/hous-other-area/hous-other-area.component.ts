@@ -48,7 +48,7 @@ export class HousOtherAreaComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     setTimeout(() => {
       this.initMap();
-    },500)
+    }, 500)
 
   }
 
@@ -68,8 +68,8 @@ export class HousOtherAreaComponent implements OnInit, AfterViewInit {
   },
 
   selectMapItem(item) {
-    this.mapSearchList.forEach((item) => {
-      item.active = false;
+    this.mapSearchList.forEach((listItem) => {
+      listItem.active = false;
     })
     item.active = true;
     this.searchInfoInMap(item.searchInfo);

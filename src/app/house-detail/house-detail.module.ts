@@ -16,12 +16,14 @@ import { HouseTypeComComponent } from './house-type-com/house-type-com.component
 import { HouseBaseInfoComponent } from './house-base-info/house-base-info.component';
 import { HouseAdvantageInfoComponent } from './house-advantage-info/house-advantage-info.component';
 import { HousOtherAreaComponent } from './hous-other-area/hous-other-area.component';
+import {HouseShowSwiperModule} from '../house-show-swiper/house-show-swiper.module';
 
 @NgModule({
   imports: [
     CommonModule,
     NgZorroAntdModule,
     FormsModule,
+    HouseShowSwiperModule,
     HouseDetailRoutingModule
   ],
   declarations: [
@@ -36,7 +38,7 @@ import { HousOtherAreaComponent } from './hous-other-area/hous-other-area.compon
     HouseTypeComComponent,
     HouseBaseInfoComponent,
     HouseAdvantageInfoComponent,
-    HousOtherAreaComponent
+    HousOtherAreaComponent,
   ]
 })
 export class HouseDetailModule { }

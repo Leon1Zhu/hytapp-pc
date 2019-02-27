@@ -12,13 +12,25 @@ export class HousePageComponent implements OnInit {
   isVisible = false;
   size = 'large';
   houseInfo: object = {};
+  houseList: Array<any>;
 
   constructor(
     private route: ActivatedRoute,
-    private houseManageService: HouseManageServiceService
+    private houseManageService: HouseManageServiceService,
   ) { }
 
   ngOnInit() {
+    this.getRouterPar();
+    this.getLikeHouse();
+  }
+
+  getLikeHouse() {
+    this.houseManageService.getlikeHouse(0, 10).subscribe((response) => {
+      console.log(response)
+    })
+  }
+
+  getRouterPar() {
     this.route.params.subscribe((data) => {
       this.houseId = data.id;
       this.initHouseInfo();
