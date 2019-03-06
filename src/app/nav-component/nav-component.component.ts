@@ -15,22 +15,22 @@ export class NavComponentComponent implements OnInit {
     },
     {
       name: '住宅',
-      link: '',
+      link: 'http://njyfdc.com//pc/#/houseDetail/1',
       isActive: false,
     },
     {
       name: '商铺',
-      link: '',
+      link: 'http://njyfdc.com//pc/#/houseDetail/2',
       isActive: false,
     },
     {
       name: '公寓',
-      link: '',
+      link: 'http://njyfdc.com//pc/#/houseDetail/4',
       isActive: false,
     },
     {
       name: '写字楼',
-      link: '',
+      link: 'http://njyfdc.com//pc/#/houseDetail/5',
       isActive: false,
     },
   ];
@@ -45,6 +45,10 @@ export class NavComponentComponent implements OnInit {
     })
     navItem.isActive = true;
     if (navItem.link) {
+      if (navItem.link.indexOf('http') > -1) {
+        location.href = navItem.link;
+        return;
+      }
       this.router.navigate([navItem.link]);
     }
   }

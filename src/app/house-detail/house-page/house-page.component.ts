@@ -81,7 +81,7 @@ export class HousePageComponent implements OnInit {
       this.aboutService.addNewSub(this.phone.value, this.name.value, this.houseInfo.id, this.modelTitle).subscribe((response) => {
         this.notification.success('预约成功', '我们会在第一时间联系您');
         this.isVisible = false;
-        console.log(this.validateForm.reset())
+        this.validateForm.reset();
         return;
       });
     }
